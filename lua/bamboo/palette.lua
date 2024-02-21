@@ -71,7 +71,7 @@ return {
     green = '#65c29d',
     orange = '#f5976e',
     blue = '#89bbfe',
-    yellow = '#eaed82',
+    yellow = '#b28d2e',
     cyan = '#73d782',
     red = '#f25757',
     coral = '#c94277',
