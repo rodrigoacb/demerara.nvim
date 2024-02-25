@@ -62,7 +62,7 @@ return {
     bg0 = '#edf0e9',
     bg1 = '#cbd4c2',
     bg2 = '#adb4a6',
-    bg3 = '#90958b',
+    bg3 = '#b3bdac',
     bg_d = '#595b58',
     bg_blue = '#3f88c5',
     bg_yellow = '#b28d2e',
