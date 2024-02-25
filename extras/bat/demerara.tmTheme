@@ -5,10 +5,10 @@
 	<key>author</key>
 	<string>Riley Bruins (https://github.com/ribru17)</string>
 	<key>name</key>
-	<string>bamboo</string>
+	<string>demerara</string>
 	<key>semanticClass</key>
 	<!-- Is this fine? -->
-	<string>ribru17.bamboo</string>
+	<string>ribru17.demerara</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>gutterSettings</key>

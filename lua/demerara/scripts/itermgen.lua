@@ -16,12 +16,12 @@ end
 
 ---@param variant 'vulgaris'|'multiplex'|'light'
 function M.generate(variant)
-  local palettes = require('bamboo.palette')
+  local palettes = require('demerara.palette')
   local palette = palettes[variant]
   local file_suffix = variant == 'vulgaris' and '' or '_' .. variant
 
   local file =
-    io.open('extras/iterm/bamboo' .. file_suffix .. '.itermcolors', 'w')
+    io.open('extras/iterm/demerara' .. file_suffix .. '.itermcolors', 'w')
   if not file then
     return
   end

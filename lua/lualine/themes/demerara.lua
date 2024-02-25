@@ -1,5 +1,5 @@
-local c = require('bamboo.colors')
-local cfg = vim.g.bamboo_config
+local c = require('demerara.colors')
+local cfg = vim.g.demerara_config
 local colors = {
   bg = c.bg0,
   fg = c.fg,
@@ -12,7 +12,7 @@ local colors = {
   gray = c.grey,
 }
 
-local bamboo = {
+local demerara = {
   inactive = {
     a = { fg = colors.gray, bg = colors.bg, gui = 'bold' },
     b = { fg = colors.gray, bg = colors.bg },
@@ -29,4 +29,4 @@ local bamboo = {
   command = { a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' } },
   terminal = { a = { fg = colors.bg, bg = colors.cyan, gui = 'bold' } },
 }
-return bamboo
+return demerara

@@ -1,4 +1,4 @@
-# NOTE: Best used with the appropriate bamboo terminal emulator theme!!!
+# NOTE: Best used with the appropriate demerara terminal emulator theme!!!
 
 ble-face -s argument_error bg=red
 ble-face -s argument_option fg=#f08080,italic

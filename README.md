@@ -1,4 +1,4 @@
-# bamboo.nvim
+# demerara.nvim
 
 Dark green theme for Neovim $\ge$ 0.9 forked from
 [OneDark.nvim](https://github.com/navarasu/onedark.nvim). Theme written in Lua
@@ -6,7 +6,7 @@ with [Tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter) syntax
 highlighting and LSP semantic highlighting.
 
 _For earlier versions of Neovim and/or Tree-sitter, pin the color scheme to
-[this commit](https://github.com/ribru17/bamboo.nvim/commit/4bec1243b0681c9f43cb2a4b7a750af07d41f543)._
+[this commit](https://github.com/ribru17/demerara.nvim/commit/4bec1243b0681c9f43cb2a4b7a750af07d41f543)._
 
 ## Features
 
@@ -22,7 +22,7 @@ _For earlier versions of Neovim and/or Tree-sitter, pin the color scheme to
 - Colors, highlights, and code style of the theme can be customized as you like
   (refer to [Customization](#customization))
 - Integration with other applications (see the
-  [`extras`](https://github.com/ribru17/bamboo.nvim/tree/master/extras)
+  [`extras`](https://github.com/ribru17/demerara.nvim/tree/master/extras)
   directory)
 
 ### Regular (`vulgaris`)
@@ -30,8 +30,8 @@ _For earlier versions of Neovim and/or Tree-sitter, pin the color scheme to
 <details open>
 <summary>Click to toggle previews</summary>
 
-![bamboomdshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/815631da-853c-40ad-8e00-ce36bd442856)
-![bamboocodeshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/e605d574-3304-40f9-a483-4cb58b3857ed)
+![demeraramdshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/815631da-853c-40ad-8e00-ce36bd442856)
+![demeraracodeshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/e605d574-3304-40f9-a483-4cb58b3857ed)
 
 </details>
 
@@ -40,8 +40,8 @@ _For earlier versions of Neovim and/or Tree-sitter, pin the color scheme to
 <details>
 <summary>Click to toggle previews</summary>
 
-![bamboomultiplexmdshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/a9b1ebd1-9347-44fb-bea2-76245cd29727)
-![bamboomultiplexcodeshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/71315cf6-cd0a-4480-85f1-f56c6944ebb2)
+![demeraramultiplexmdshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/a9b1ebd1-9347-44fb-bea2-76245cd29727)
+![demeraramultiplexcodeshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/71315cf6-cd0a-4480-85f1-f56c6944ebb2)
 
 </details>
 
@@ -50,8 +50,8 @@ _For earlier versions of Neovim and/or Tree-sitter, pin the color scheme to
 <details>
 <summary>Click to toggle previews</summary>
 
-![bamboolightmdshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/63f2b9e7-085f-4b32-bded-6573ef91eea1)
-![bamboolightcodeshowcase](https://github.com/ribru17/bamboo.nvim/assets/55766287/f65dda17-caea-4906-a638-00c8e5073eed)
+![demeraralightmdshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/63f2b9e7-085f-4b32-bded-6573ef91eea1)
+![demeraralightcodeshowcase](https://github.com/ribru17/demerara.nvim/assets/55766287/f65dda17-caea-4906-a638-00c8e5073eed)
 
 </details>
 <br/>
@@ -82,14 +82,14 @@ Install via your favorite package manager:
 ```lua
 -- Using lazy.nvim
 {
-  'ribru17/bamboo.nvim',
+  'ribru17/demerara.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    require('bamboo').setup {
+    require('demerara').setup {
       -- optional configuration here
     }
-    require('bamboo').load()
+    require('demerara').load()
   end,
 },
 ```
@@ -105,19 +105,19 @@ Install via your favorite package manager:
 
 ```lua
 -- Lua
-require('bamboo').load()
+require('demerara').load()
 ```
 
 ```vim
 " Vim
-colorscheme bamboo
+colorscheme demerara
 ```
 
 ## Default Configuration
 
 ```lua
 -- Lua
-require('bamboo').setup {
+require('demerara').setup {
   -- Main options --
   -- NOTE: to use the light theme, set `vim.o.background = 'light'`
   style = 'vulgaris', -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
@@ -164,20 +164,20 @@ require('bamboo').setup {
 ### Vimscript Configuration
 
 Bamboo can be configured also with Vimscript, using the global dictionary
-`g:bamboo_config`. **NOTE**: when setting boolean values use `v:true` and
+`g:demerara_config`. **NOTE**: when setting boolean values use `v:true` and
 `v:false` instead of 0 and 1.
 
 Example:
 
 ```vim
-let g:bamboo_config = {
+let g:demerara_config = {
   \ 'ending_tildes': v:true,
   \ 'diagnostics': {
     \ 'darker': v:true,
     \ 'background': v:false,
   \ },
 \ }
-colorscheme bamboo
+colorscheme demerara
 ```
 
 ## Customization
@@ -185,7 +185,7 @@ colorscheme bamboo
 Example using custom colors and highlights:
 
 ```lua
-require('bamboo').setup {
+require('demerara').setup {
   colors = {
     bright_orange = '#ff8800', -- define a new color
     green = '#00ffaa', -- redefine an existing color
@@ -207,10 +207,10 @@ onwards. TS prefix is trimmed and lowercase words are separated with `.`.
 
 The old way before neovim 0.8 looks like this. All highlights used in this
 colorscheme can be found in
-[this file](https://github.com/ribru17/bamboo.nvim/blob/master/lua/bamboo/highlights.lua).
+[this file](https://github.com/ribru17/demerara.nvim/blob/master/lua/demerara/highlights.lua).
 
 ```lua
-require('bamboo').setup {
+require('demerara').setup {
   colors = {
     bright_orange = '#ff8800', -- define a new color
     green = '#00ffaa', -- redefine an existing color

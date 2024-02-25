@@ -7,5 +7,5 @@
 2. Reload Konsole
 3. Navigate to **Settings > Manage Profiles**, then click **New**
 4. Check **Default Profile**
-5. Open the **Appearance** tab and select the bamboo theme
+5. Open the **Appearance** tab and select the demerara theme
 6. Click **Apply** then **OK**

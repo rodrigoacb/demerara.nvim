@@ -1,6 +1,6 @@
-local c = require('bamboo.colors')
-local cfg = vim.g.bamboo_config
-local util = require('bamboo.util')
+local c = require('demerara.colors')
+local cfg = vim.g.demerara_config
+local util = require('demerara.util')
 local set_hl = vim.api.nvim_set_hl
 
 local M = {}
@@ -1034,9 +1034,9 @@ function M.setup()
       if not color_name then
         vim.schedule(function()
           vim.notify(
-            'bamboo.nvim: unknown color "' .. name .. '"',
+            'demerara.nvim: unknown color "' .. name .. '"',
             vim.log.levels.ERROR,
-            { title = 'bamboo.nvim' }
+            { title = 'demerara.nvim' }
           )
         end)
         return ''
@@ -1045,7 +1045,7 @@ function M.setup()
     return prefix .. '=' .. color_name
   end
 
-  for group_name, group_settings in pairs(vim.g.bamboo_config.highlights) do
+  for group_name, group_settings in pairs(vim.g.demerara_config.highlights) do
     if group_settings.link then
       vim.cmd(
         string.format('highlight! link %s %s', group_name, group_settings.link)
