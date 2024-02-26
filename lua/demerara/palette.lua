@@ -59,7 +59,7 @@ return {
   },
   light = {
     black = '#101210',
-    bg0 = '#edf0e9',
+    bg0 = '#fdf6e3',
     bg1 = '#cbd4c2',
     bg2 = '#adb4a6',
     bg3 = '#b3bdac',
