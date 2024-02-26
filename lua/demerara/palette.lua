@@ -64,7 +64,7 @@ return {
     bg2 = '#adb4a6',
     bg3 = '#b3bdac',
     bg_d = '#dce3a8',
-    bg_blue = '#2d74c4',
+    bg_blue = '#2661a3',
     bg_yellow = '#b28d2e',
     fg = '#2c2c2c',
     purple = '#ce6a85',
